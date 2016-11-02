@@ -5,6 +5,8 @@ var twig = require('twig').twig
 exports.name = 'twig'
 exports.outputFormat = 'html'
 
+module.exports.twig = twig;
+
 exports.compile = function (str, options) {
   // Construct the Twig options.
   options = options || {}
